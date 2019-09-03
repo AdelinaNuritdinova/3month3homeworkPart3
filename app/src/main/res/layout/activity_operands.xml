@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OperandsActivity">
+
+    <EditText
+        android:id="@+id/first_number"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="ВВЕДИТЕ ЧИСЛО"/>
+
+    <EditText
+        android:id="@+id/second_number"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="ВВЕДИТЕ ЧИСЛО"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/first_number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:hint="РЕЗУЛЬТАТ"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="+"
+        android:textSize="40dp"
+        />
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintLeft_toRightOf="@+id/plus"
+        android:text="-"
+        android:textSize="40dp"/>
+    <Button
+        android:id="@+id/multiply1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintLeft_toRightOf="@+id/minus"
+        android:text="*"
+        android:textSize="40dp"/>
+    <Button
+        android:id="@+id/division"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toBottomOf="@+id/result"
+        app:layout_constraintLeft_toRightOf="@+id/multiply1"
+        android:text="/"
+        android:textSize="40dp"/>
+    <Button
+        android:id="@+id/save"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plus"
+        android:text="СОХРАНИТЬ"
+        android:textSize="20dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
